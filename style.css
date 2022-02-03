@@ -17,6 +17,36 @@ body * + * {
   margin-top: 1.5em;
 }
 
+.row {
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+}
+
+.row::after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+[class*="column-"] {
+  float: left;
+  padding: 0 0.75em;
+  margin-top: 0;
+}
+
+.column-1 { width: 8.3333%; }
+.column-2 { width: 16.6667%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.3333%; }
+.column-5 { width: 41.6667%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.3333%; }
+.column-8 { width: 66.6667%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.3333%; }
+.column-11 { width: 91.6667%; }
+.column-12 { width: 100%; }
+
 header {
   padding: 1em 1.5em;
   color: #fff;
@@ -26,16 +56,47 @@ header {
 }
 
 .main {
-  padding: 0 1.5em;
+  padding: 0 1.5em 1.5em;
   background-color: #fff;
   border-radius: .5em;
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
-.main {
-  float: left;
+.media {
+  padding: 1.5em;
+  background-color: #eee;
+  border-radius: 0.5em;
 }
+
+.media-image {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.media-body {
+  overflow: auto;
+  margin-top: 0;
+}
+
+.media-body h4 {
+  margin-top: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: " ";
+}
+
+.clearfix::after{
+  clear: both;
+  /* 清除浮动 */
+}
+
+
+
+

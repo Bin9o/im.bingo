@@ -15,13 +15,13 @@ document.querySelector('#app').innerHTML = `
               我是刘俊 bingo。网站还在建设中。
             </p>
             <p>
-              你可以访问我的 <a href="https://github.com/bin9o">GitHub 主页</a>
+              你可以访问我的 <a href="https://github.com/JunBingo">GitHub 主页</a>
             </p>
             <p>
               你也可以访问 <a href="https://three.bingo">three.bingo</a> 了解我的 <a href="https://threejs.org">Three.js</a> Demo
             </p>
             <p>
-              我的邮箱📮：BingJun@outlook.com
+              我的邮箱📮：JunBingo@outlook.com
             </p>
           </div>
         </div>
